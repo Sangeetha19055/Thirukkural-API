@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(204, 207, 207);
+  font-family: sans-serif;
+}
+/* header with image styles */
+header {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+header > img {
+  width: 110px;
+}
+header > img:nth-child(1) {
+  margin-top: 50px;
+  animation: animate_left 10s linear infinite;
+}
+/* animation Effects for left image in the header */
+@keyframes animate_left {
+  0%,
+  100% {
+    transform: translateX(-40px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+header > img:nth-child(2) {
+  width: 140px;
+}
+header > img:nth-child(3) {
+  margin-top: 50px;
+  animation: animate_right 10s linear infinite;
+}
+/* animation Effects for right image in the header */
+@keyframes animate_right {
+  0%,
+  100% {
+    transform: translateX(40px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+/* style for center image */
+.centerimage {
+  text-align: center;
+}
+.centerimage > img {
+  width: 190px;
+  height: 190px;
+}
+
+/* .form_container {
+  display: flex;
+  justify-content: center;
+} */
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.inputBox {
+  position: relative;
+  width: 300px;
+  height: 46px;
+}
+input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid #111;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  color: #111;
+}
+input[type="number"] {
+  background: #fff;
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  border-radius: 8px 0px 0px 8px;
+}
+/* Placeholder style starts here */
+.form_container .inputBox > span {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  padding: 15px 30px;
+  display: inline-block;
+  font-size: 16px;
+  color: #111;
+  font-weight: 300;
+  transition: 0.5s;
+  pointer-events: none;
+}
+/*  " ~ " Outside the input first span tag wil be selected */
+.form_container .inputBox > input:focus ~ span {
+  transform: translateX(-10px) translateY(-40px);
+  font-size: 16px;
+  font-weight: 500;
+  color: #ff5722;
+}
+
+/* =============placeholder stylesss =========== */
+.search_button {
+  position: relative;
+  left: 100px;
+  border-radius: 0px 8px 8px 0;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #ffc107;
+  color: #fff;
+}
+.search_button:hover {
+  background: #ff5722;
+}
+
+/* Section styles */
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.card-container {
+  background-color: rgb(255, 255, 255);
+  width: 100vh;
+  box-shadow: 0 15px 50px rgba(13, 14, 13, 0.313);
+  padding: 30px 40px 40px;
+  border-radius: 10px;
+}
+.section_title {
+  text-align: center;
+  color: #171817;
+  margin-bottom: 10px;
+}
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.card-title h4 {
+  color: rgb(255, 0, 93);
+  font-size: 18px;
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+  margin-bottom: 10px;
+}
+.card-heading h4 {
+  background-color: rgba(211, 208, 208, 0.289);
+  display: inline;
+  color: #075226;
+  padding: 1px 2px;
+  font-size: 20px;
+}
+.card-content {
+  margin-top: 10px;
+}
+.card-content h4 {
+  color: blue;
+  font-size: 18px;
+  text-align: center;
+}
+.card-content p {
+  margin-top: 26px;
+}
+.card-content p strong {
+  color: #ff5722;
+}
+.author_name {
+  text-align: right;
+}
+
+/* media style for large screen */
+@media (max-width: 1024px) {
+  input[type="number"] {
+    background: rgb(224, 9, 9);
+    width: 400px;
+  }
+  .search_button {
+    left: 100px;
+  }
+}
+
+/* media style for large screen */
+@media (max-width: 992px) {
+  .form_container {
+    display: block;
+  }
+  .inputBox {
+    width: 100%;
+  }
+  input[type="number"] {
+    background: #fff;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: darkcyan;
+  }
+
+  .search_button {
+    margin-top: 20px;
+    left: 0px;
+    border-radius: 8px;
+    width: 100%;
+  }
+}
+
+/* ============================ */
+/* media style for medium screen */
+@media (max-width: 768px) {
+}
+/* media style for small screen */
+@media (max-width: 576px) {
+  header > img {
+    width: 90px;
+  }
+  header > img:nth-child(2) {
+    width: 100px;
+    height: 90px;
+  }
+  /* animation Effects for right image in the header */
+  @keyframes animate_left {
+    0%,
+    100% {
+      transform: translateX(1px);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+  }
+  /* animation Effects for right image in the header */
+  @keyframes animate_right {
+    0%,
+    100% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+  }
+
+  .card-container {
+    padding: 20px;
+  }
+  .card-content h4 {
+    font-size: 15px;
+    text-align: left;
+  }
+}
