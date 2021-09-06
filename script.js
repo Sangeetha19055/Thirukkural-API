@@ -40,6 +40,7 @@ center_image.append(center_image_img);
 
 //-------------------------- Creating the form Starts HERE-------------------------
 const form_box = document.createElement("form");
+form_box.setAttribute("action", "#");
 const form_container = document.createElement("div");
 form_container.setAttribute("class", "form_container");
 form_container.innerHTML = `
