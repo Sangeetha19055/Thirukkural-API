@@ -77,14 +77,18 @@ const searchData = function () {
   inputvalue.value = "";
 };
 //----------------------- Function to get the data from the Api -------------
-async function getData(find) {
-  const response = await fetch(`${apiurl}/api?num=${find}`);
-  const data = await response.json();
-  console.log(data);
-  document.querySelector(".section").innerHTML = "";
-  document.querySelector(".section1").innerHTML = "";
-  display_Data_Tamil(data);
-  display_Data_English(data);
+  async function getData(find) {
+  try {
+    const response = await fetch(`${apiurl}/api?num=${find}`);
+    const data = await response.json();
+    console.log(data);
+    document.querySelector(".section").innerHTML = "";
+    document.querySelector(".section1").innerHTML = "";
+    display_Data_Tamil(data);
+    display_Data_English(data);
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 //======================= Fecthing API Ends Here =====================
