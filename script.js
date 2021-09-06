@@ -65,6 +65,7 @@ document.querySelector(".form").append(header, center_image, form_box);
 //======================== Creating the form Ends HERE =================================
 
 //--------------------------- Fecthing API --------------------
+//---------------------------Base Api Link ---------------------
 const apiurl = "https://api-thirukkural.vercel.app";
 
 //-----------------Function for get tha inputvalue form the textbox---------
@@ -77,20 +78,16 @@ const searchData = function () {
   inputvalue.value = "";
 };
 //----------------------- Function to get the data from the Api -------------
-  async function getData(find) {
-  try {
-    const response = await fetch(`${apiurl}/api?num=${find}`);
-    const data = await response.json();
-    console.log(data);
-    document.querySelector(".section").innerHTML = "";
-    document.querySelector(".section1").innerHTML = "";
-    display_Data_Tamil(data);
-    display_Data_English(data);
-  } catch (err) {
-    console.log(err);
-  }
+async function getData(find) {
+  const response = await fetch(`${apiurl}/api?num=${find}`);
+  const data = await response.json();
+  console.log(data);
+  document.querySelector(".section").innerHTML = "";
+  document.querySelector(".section1").innerHTML = "";
+  display_Data_Tamil(data);
+  display_Data_English(data);
 }
-
+getData(1);
 //======================= Fecthing API Ends Here =====================
 
 //-------------------------- Creating the section Starts HERE -------------------------
@@ -147,4 +144,3 @@ const display_Data_English = function (data) {
 //========================== Creating the section Ends HERE ==============================
 
 //=========================================================================================
-
