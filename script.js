@@ -88,7 +88,6 @@ async function getData(find) {
   display_Data_Tamil(data);
   display_Data_English(data);
 }
-getData(1);
 //======================= Fecthing API Ends Here =====================
 
 //-------------------------- Creating the section Starts HERE -------------------------
