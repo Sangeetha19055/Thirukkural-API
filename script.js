@@ -53,7 +53,7 @@ form_container.innerHTML = `
             class="search_button"
             id="search_btn"
             name="search_btn"
-            onclick="searchData()"
+            onclick="searchData(event)"
           >
             Search
           </button>
@@ -70,7 +70,8 @@ document.querySelector(".form").append(header, center_image, form_box);
 const apiurl = "https://api-thirukkural.vercel.app";
 
 //-----------------Function for get tha inputvalue form the textbox---------
-const searchData = function () {
+const searchData = function (event) {
+  event.preventDefault();
   let inputvalue = document.querySelector("#search");
   let findText = inputvalue.value;
   console.log(findText);
@@ -153,5 +154,4 @@ const display_Data_English = function (data) {
 };
 
 //========================== Creating the section Ends HERE ==============================
-
 //=========================================================================================
