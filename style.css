@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(220 219 216 / 75%);
+  /* background-color: rgb(220 219 216 / 75%); */
+  background-color: rgb(226 226 226 / 75%);
   font-family: sans-serif;
 }
 /* header with image styles */
@@ -125,13 +126,12 @@ input[type="number"] {
   border: none;
   outline: none;
   cursor: pointer;
-  /* background: #ffc107; */
-  background: #8a96f1;
+  background: #e26e6efc;
   color: #fff;
   box-shadow: inset -1px -1px 10px 0px rgb(93 93 93 / 75%);
 }
 .search_button:hover {
-  background: #6189d9;
+  background: #931e1efc;
 }
 
 /* Section styles */
@@ -154,11 +154,17 @@ input[type="number"] {
   margin-bottom: 30px;
 }
 .card-container {
-  background-color: rgb(241 241 241 / 75%);
+  background-color: rgb(232 232 232 / 65%);
   width: 100vh;
-  box-shadow: 0 15px 50px rgba(13, 14, 13, 0.313);
+  box-shadow: 0 15px 50px rgb(13 14 13 / 31%);
   padding: 30px 40px 40px;
   border-radius: 10px;
+  background-image: url(https://wi.wallpapertip.com/wsimgs/34-346972_parchment-wallpaper-hd.jpg);
+  /* background-image: url(https://www.backdropstyle.com/media/catalog/product/cache/1/image/650x/040ec09…/m/b/mb74.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
 }
 .section_title {
   text-align: center;
@@ -187,6 +193,7 @@ input[type="number"] {
 .card-content {
   margin-top: 10px;
 }
+
 .card-content h4 {
   color: blue;
   font-size: 18px;
@@ -194,12 +201,16 @@ input[type="number"] {
 }
 .card-content p {
   margin-top: 26px;
+  font-weight: 600;
 }
 .card-content p strong {
   color: #ff5722;
+  font-weight: 600;
 }
 .author_name {
   text-align: right;
+  margin-top: 10px;
+  color: #0606068c;
 }
 
 /* media style for large screen */
