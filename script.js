@@ -74,19 +74,30 @@ const searchData = function () {
   let inputvalue = document.querySelector("#search");
   let findText = inputvalue.value;
   console.log(findText);
-  getData(findText);
+  if (findText == "") {
+    alert("Please!!! Enter the number...");
+  } else if (findText > 1330) {
+    alert("Please!!! Enter the number from 1 to 1330");
+  } else {
+    getData(findText);
+  }
 
   inputvalue.value = "";
 };
 //----------------------- Function to get the data from the Api -------------
 async function getData(find) {
-  const response = await fetch(`${apiurl}/api?num=${find}`);
-  const data = await response.json();
-  console.log(data);
-  document.querySelector(".section").innerHTML = "";
-  document.querySelector(".section1").innerHTML = "";
-  display_Data_Tamil(data);
-  display_Data_English(data);
+  try {
+    const response = await fetch(`${apiurl}/api?num=${find}`);
+    const data = await response.json();
+    console.log(data);
+    document.querySelector(".section").innerHTML = "";
+    document.querySelector(".section1").innerHTML = "";
+    display_Data_Tamil(data);
+    display_Data_English(data);
+  } catch (err) {
+    document.querySelector(".section").append("Details Cannot be  Founded");
+    console.log(err);
+  }
 }
 //======================= Fecthing API Ends Here =====================
 
