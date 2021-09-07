@@ -126,12 +126,12 @@ input[type="number"] {
   border: none;
   outline: none;
   cursor: pointer;
-  background: #e26e6efc;
+  background: #c07700;
   color: #fff;
   box-shadow: inset -1px -1px 10px 0px rgb(93 93 93 / 75%);
 }
 .search_button:hover {
-  background: #931e1efc;
+  background: #98582afc;
 }
 
 /* Section styles */
