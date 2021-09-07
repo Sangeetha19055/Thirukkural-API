@@ -114,13 +114,13 @@ const display_Data_Tamil = function (data) {
         </div>
 
         <div class="card-heading">
-          <h4>குறள்: ${data.number}</h4>
+          <h4>குறள் எண்: ${data.number}</h4>
         </div>
 
         <div class="card-content">
           <h4>${data.line1}</h4>
           <h4>${data.line2}</h4>
-          <p><strong>விளக்கம்:</strong> ${data.tam_exp}</p>
+          <p><strong>குறள் விளக்கம்: </strong> ${data.tam_exp}</p>
         </div>
         <h4 class="author_name">- திருவள்ளுவர்</h4>
 `;
