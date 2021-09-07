@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(204, 207, 207);
+  background-color: rgb(220 219 216 / 75%);
   font-family: sans-serif;
 }
 /* header with image styles */
@@ -58,10 +58,6 @@ header > img:nth-child(3) {
   height: 190px;
 }
 
-/* .form_container {
-  display: flex;
-  justify-content: center;
-} */
 .form_container {
   display: flex;
   justify-content: center;
@@ -95,6 +91,7 @@ input[type="number"] {
   outline: none;
   padding: 0 25px;
   border-radius: 8px 0px 0px 8px;
+  box-shadow: inset -2px -1px 6px 0px rgb(70 69 70 / 75%);
 }
 /* Placeholder style starts here */
 .form_container .inputBox > span {
@@ -112,9 +109,9 @@ input[type="number"] {
 /*  " ~ " Outside the input first span tag wil be selected */
 .form_container .inputBox > input:focus ~ span {
   transform: translateX(-10px) translateY(-40px);
-  font-size: 16px;
-  font-weight: 500;
-  color: #ff5722;
+  font-size: 15px;
+  font-weight: 800;
+  color: #080808;
 }
 
 /* =============placeholder stylesss =========== */
@@ -128,11 +125,13 @@ input[type="number"] {
   border: none;
   outline: none;
   cursor: pointer;
-  background: #ffc107;
+  /* background: #ffc107; */
+  background: #8a96f1;
   color: #fff;
+  box-shadow: inset -1px -1px 10px 0px rgb(93 93 93 / 75%);
 }
 .search_button:hover {
-  background: #ff5722;
+  background: #6189d9;
 }
 
 /* Section styles */
@@ -155,7 +154,7 @@ input[type="number"] {
   margin-bottom: 30px;
 }
 .card-container {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(241 241 241 / 75%);
   width: 100vh;
   box-shadow: 0 15px 50px rgba(13, 14, 13, 0.313);
   padding: 30px 40px 40px;
@@ -206,7 +205,6 @@ input[type="number"] {
 /* media style for large screen */
 @media (max-width: 1024px) {
   input[type="number"] {
-    background: rgb(224, 9, 9);
     width: 400px;
   }
   .search_button {
@@ -227,7 +225,6 @@ input[type="number"] {
     width: 100%;
     border-radius: 8px;
     font-size: 16px;
-    background-color: darkcyan;
   }
 
   .search_button {
