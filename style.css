@@ -7,6 +7,44 @@ body {
   background-color: rgb(226 226 226 / 75%);
   font-family: sans-serif;
 }
+/* Navbar  */
+nav {
+  background-image: linear-gradient(
+    to right,
+    #e4e2db,
+    #decbb1,
+    #e0b08d,
+    #e49275,
+    #e66f6b,
+    #e86165,
+    #e95261,
+    #ea405d,
+    #ee4c4b,
+    #ed5a39,
+    #e96925,
+    #e27805
+  );
+  height: 80px;
+  padding: 6px 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  display: flex;
+}
+
+nav .logo-img img {
+  width: 70px;
+  height: 70px;
+}
+nav .logo-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+nav .logo-text img {
+  width: 280px;
+  height: 90px;
+}
+/* navbar Ends here */
 /* header with image styles */
 header {
   display: flex;
@@ -125,12 +163,13 @@ input[type="number"] {
   border: none;
   outline: none;
   cursor: pointer;
-  background: #c07700;
+  background-color: #ff5278e0;
+
   color: #fff;
   box-shadow: inset -1px -1px 10px 0px rgb(93 93 93 / 75%);
 }
 .search_button:hover {
-  background: #98582afc;
+  background-color: #970726df;
 }
 
 /* Section styles */
@@ -150,7 +189,7 @@ input[type="number"] {
   width: 100%;
   margin-top: 0px;
   padding: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 .card-container {
   background-color: rgb(232 232 232 / 65%);
@@ -215,6 +254,19 @@ input[type="number"] {
   margin-top: 10px;
   color: #0606068c;
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1d1d1c;
+  height: 50px;
+  padding: 6px 20px;
+}
+footer p {
+  text-align: center;
+  line-height: 50px;
+  color: rgba(180, 179, 179, 0.642);
+}
 
 /* media style for large screen */
 @media (max-width: 1024px) {
@@ -252,9 +304,31 @@ input[type="number"] {
 /* ============================ */
 /* media style for medium screen */
 @media (max-width: 768px) {
+  nav .logo-img img {
+    width: 60px;
+    height: 60px;
+  }
+  nav .logo-text img {
+    width: 200px;
+    height: 90px;
+  }
 }
 /* media style for small screen */
 @media (max-width: 576px) {
+  nav {
+    padding: 0px 10px;
+    height: 70px;
+  }
+  nav .logo-img img {
+    padding-top: 6px;
+    width: 60px;
+    height: 60px;
+  }
+  nav .logo-text img {
+    padding-top: 10px;
+    width: 150px;
+    height: 70px;
+  }
   header > img {
     width: 90px;
   }
