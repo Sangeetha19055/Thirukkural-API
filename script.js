@@ -1,3 +1,23 @@
+const nav = document.createElement("nav");
+const log_img = document.createElement("div");
+log_img.setAttribute("class", "logo-img");
+const log_image = document.createElement("img");
+log_image.setAttribute(
+  "src",
+  "https://images.click.in/classifieds/images/177/28_5_2015_16_32_16_pu3rhurb17lmrl4afchq5o1bq7_q671hm5fa.png"
+);
+log_img.append(log_image);
+
+const logo_text = document.createElement("div");
+logo_text.setAttribute("class", "logo-text");
+const logo_text_image = document.createElement("img");
+logo_text_image.setAttribute(
+  "src",
+  "https://www.thirukkural.net/themes/styleHome/Logo_ta.png"
+);
+logo_text.append(logo_text_image);
+nav.append(log_img, logo_text);
+document.querySelector(".navbar").append(nav);
 // ------------------- header and images Starts HERE -------------------
 const header = document.createElement("header");
 header.setAttribute("class", "header");
@@ -66,7 +86,6 @@ document.querySelector(".form").append(header, center_image, form_box);
 //======================== Creating the form Ends HERE =================================
 
 //--------------------------- Fecthing API --------------------
-//---------------------------Base Api Link ---------------------
 const apiurl = "https://api-thirukkural.vercel.app";
 
 //-----------------Function for get tha inputvalue form the textbox---------
@@ -154,4 +173,11 @@ const display_Data_English = function (data) {
 };
 
 //========================== Creating the section Ends HERE ==============================
-//=========================================================================================
+
+//================= Footer ================
+const footer_div = document.createElement("div");
+const footer_para = document.createElement("p");
+footer_para.innerHTML = "© 2021 by Sangeetha";
+footer_div.append(footer_para);
+document.querySelector("footer").append(footer_div);
+//=================footer Ends here==========
