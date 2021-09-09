@@ -198,7 +198,6 @@ input[type="number"] {
   padding: 30px 40px 40px;
   border-radius: 10px;
   background-image: url(https://wi.wallpapertip.com/wsimgs/34-346972_parchment-wallpaper-hd.jpg);
-  /* background-image: url(https://www.backdropstyle.com/media/catalog/product/cache/1/image/650x/040ec09…/m/b/mb74.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -218,7 +217,6 @@ input[type="number"] {
   color: rgb(255, 0, 93);
   font-size: 18px;
   font-weight: 600;
-  /* letter-spacing: 1px; */
   margin-bottom: 10px;
 }
 .card-heading h4 {
@@ -259,12 +257,10 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: #1d1d1c;
-  height: 50px;
-  padding: 6px 20px;
+  padding: 8px 20px;
 }
 footer p {
   text-align: center;
-  line-height: 50px;
   color: rgba(180, 179, 179, 0.642);
 }
 
