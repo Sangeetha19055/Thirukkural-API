@@ -101,6 +101,7 @@ header > img:nth-child(3) {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  margin-top: 10px;
 }
 
 .inputBox {
@@ -243,7 +244,7 @@ input[type="number"] {
 .card-content p strong {
   color: #ff5722;
   font-weight: 600;
-  background-color: aliceblue;
+/*   background-color: aliceblue; */
   margin-right: 6px;
   padding: 2px;
 }
