@@ -2,19 +2,13 @@ const nav = document.createElement("nav");
 const log_img = document.createElement("div");
 log_img.setAttribute("class", "logo-img");
 const log_image = document.createElement("img");
-log_image.setAttribute(
-  "src",
-  "https://images.click.in/classifieds/images/177/28_5_2015_16_32_16_pu3rhurb17lmrl4afchq5o1bq7_q671hm5fa.png"
-);
+log_image.setAttribute("src","https://images.click.in/classifieds/images/177/28_5_2015_16_32_16_pu3rhurb17lmrl4afchq5o1bq7_q671hm5fa.png");
 log_img.append(log_image);
 
 const logo_text = document.createElement("div");
 logo_text.setAttribute("class", "logo-text");
 const logo_text_image = document.createElement("img");
-logo_text_image.setAttribute(
-  "src",
-  "https://www.thirukkural.net/themes/styleHome/Logo_ta.png"
-);
+logo_text_image.setAttribute("src","https://www.thirukkural.net/themes/styleHome/Logo_ta.png");
 logo_text.append(logo_text_image);
 nav.append(log_img, logo_text);
 document.querySelector(".navbar").append(nav);
@@ -22,24 +16,15 @@ document.querySelector(".navbar").append(nav);
 const header = document.createElement("header");
 header.setAttribute("class", "header");
 const header_image_left = document.createElement("img");
-header_image_left.setAttribute(
-  "src",
-  "https://thirukkural.net/themes/styleHome/Aram_home_ta.png"
-);
+header_image_left.setAttribute( "src", "https://thirukkural.net/themes/styleHome/Aram_home_ta.png");
 header_image_left.setAttribute("alt", "left_image");
 
 const header_image_right = document.createElement("img");
-header_image_right.setAttribute(
-  "src",
-  "https://thirukkural.net/themes/styleHome/Porul_home_ta.png"
-);
+header_image_right.setAttribute( "src", "https://thirukkural.net/themes/styleHome/Porul_home_ta.png");
 header_image_right.setAttribute("alt", "right_image");
 
 const header_image_center = document.createElement("img");
-header_image_center.setAttribute(
-  "src",
-  "https://thirukkural.net/themes/styleHome/Kaamam_home_ta.png"
-);
+header_image_center.setAttribute( "src","https://thirukkural.net/themes/styleHome/Kaamam_home_ta.png");
 header_image_center.setAttribute("alt", "center_image");
 header.append(header_image_left, header_image_center, header_image_right);
 
@@ -49,10 +34,7 @@ header.append(header_image_left, header_image_center, header_image_right);
 const center_image = document.createElement("div");
 center_image.setAttribute("class", "centerimage");
 const center_image_img = document.createElement("img");
-center_image_img.setAttribute(
-  "src",
-  "https://thirukkural.net/themes/styleHome/CenterShow.png"
-);
+center_image_img.setAttribute("src","https://thirukkural.net/themes/styleHome/CenterShow.png");
 center_image_img.setAttribute("alt", "center_image");
 center_image.append(center_image_img);
 
@@ -69,14 +51,7 @@ form_container.innerHTML = `
           <span>Enter any number from 1 to 1330</span>
         </div>
         <div class="inputBox">
-          <button
-            class="search_button"
-            id="search_btn"
-            name="search_btn"
-            onclick="searchData(event)"
-          >
-            Search
-          </button>
+          <button class="search_button" id="search_btn" name="search_btn" onclick="searchData(event)">Search </button>
         </div>
 `;
 form_box.append(form_container);
