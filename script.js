@@ -156,3 +156,27 @@ footer_para.innerHTML = "© 2021 by Sangeetha";
 footer_div.append(footer_para);
 document.querySelector("footer").append(footer_div);
 //=================footer Ends here==========
+
+// loader script
+const loader_div = document.createElement("div");
+loader_div.setAttribute("class", "loader");
+const loader_image = document.createElement("img");
+loader_image.setAttribute(
+  "src",
+  "https://i.pinimg.com/originals/c0/0a/6f/c00a6f768ec5ad626774e9a9f6a88ee0.gif"
+);
+loader_div.append(loader_image);
+document.querySelector(".page_loader").append(loader_div);
+
+const loader = document.querySelector(".loader");
+const main = document.querySelector(".main");
+
+function init() {
+  setTimeout(() => {
+    loader.style.opacity = 0;
+    loader.style.display = "none";
+    main.style.display = "block";
+    setTimeout(() => (main.style.opacity = 1), 50);
+  }, 6000);
+}
+init();
